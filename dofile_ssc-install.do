@@ -5,3 +5,5 @@ ssc install mdesc // Command to look for missing values in each variable of the 
 ssc install fre // Useful command that sometimes can be used instead of tabulate 
 
 net install http://www.stata.com/users/kcrow/tab2xl, replace
+
+ssc install groupfunction // Command created by Paul Corral and others that's similar to the collapse comand.  
