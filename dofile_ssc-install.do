@@ -1,13 +1,11 @@
 clear 
 
-net install http://www.stata.com/users/kcrow/tab2xl, replace
-
-ssc install iefieldkit, replace
-ssc install ietoolkit, replace
-ssc install outreg2, replace
-ssc install estout, replace
-ssc install regsave, replace
-ssc install combomarginsplot
+ssc install stata_linter  
+// Linters are tools to flag style errors and possible bugs in the software.
+// Developed by DIME Analytics (World Bank)
+// More info in the following links: 
+// https://blogs.worldbank.org/impactevaluations/stata-linter-produces-stata-code-sparks-joy
+// https://github.com/worldbank/stata-linter/blob/main/test/bad.do
 
 ssc install mdesc 
 // Command to look for missing values in each variable of the dataset
@@ -26,9 +24,25 @@ ssc install bcstats
 // bcstats also allows users to test for stability by running a paired t-test to compare the sample means for the survey data and the back check data. It also allows users to specify the confidence level for the t-test using the level() option. By default, it considers a 95% confidence level.
 // https://dimewiki.worldbank.org/Back_Checks
 
+ssc install iefieldkit, replace
+/* iefieldkit is a Stata package containing several commands to routinize tasks 
+related to primary data collection. It can be installed through SSC (https://ideas.repec.org/c/boc/bocode/s458600.html), 
+The code is available at https://github.com/worldbank/iefieldkit. 
+To learn more, see the DIME Wiki at https://dimewiki.worldbank.org/iefieldkit. */
+
+ssc install ietoolkit, replace
+/* ietoolkit is a Stata package containing several commands to routinize tasks in impact evaluation. 
+It can be installed through the Boston College Statistical Software Components (SSC) archive (https://ideas.repec.org/c/boc/bocode/s458137.html)
+The code is available at https://github.com/worldbank/ietoolkit. 
+To learn more, see the DIME Wiki at https://dimewiki.worldbank.org/ietoolkit. */
 
 
 
+net install http://www.stata.com/users/kcrow/tab2xl, replace
+ssc install outreg2, replace
+ssc install estout, replace
+ssc install regsave, replace
+ssc install combomarginsplot
 
 
 ssc install twowayfeweights
