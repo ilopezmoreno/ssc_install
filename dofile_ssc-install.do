@@ -35,6 +35,12 @@ ssc install ietoolkit, replace
 It can be installed through the Boston College Statistical Software Components (SSC) archive (https://ideas.repec.org/c/boc/bocode/s458137.html)
 The code is available at https://github.com/worldbank/ietoolkit. 
 To learn more, see the DIME Wiki at https://dimewiki.worldbank.org/ietoolkit. */
+		help iebaltab
+	  /* iebaltab is a command from the package "ietoolkit". 
+	  iebaltab is a Stata command that produces balance tables, or 
+	  difference-in-means tables, with multiple groups or treatment arms. 
+	  It is a useful tool to use while sampling, conducting data analysis and 
+	  exporting results in a reproducible manner. 	  
 
 
 
